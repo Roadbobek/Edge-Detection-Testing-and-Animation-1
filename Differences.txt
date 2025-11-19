@@ -1,0 +1,6 @@
+Differences in Edge Detection Approaches
+Feature:	            Edge_Detection_Aggressive.py (Less Preprocessing)   	    Edge_Detection_Smoother_More_Precise.py (With Gaussian Blur)
+Preprocessing:	        Grayscale conversion only.	                                Gaussian Blur applied before Canny.
+Edge Sensitivity:       High (More sensitive to noise and minor textures).  	    Lower (Less sensitive, smoother lines, removes noise).
+Resulting Edges:	    Often "aggressive," thinner, and more fragmented.	        Often cleaner, thicker, and structurally more robust.
+Canny Input:	        Raw grayscale pixel data.                           	    Noise-reduced (smoothed) pixel data.
